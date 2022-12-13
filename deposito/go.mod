@@ -1,5 +1,4 @@
-
-module "github.com/Racrivelari/ProjetoEquipeE/deposito"
+module github.com/Racrivelari/ProjetoEquipeE/deposito
 
 go 1.19
 

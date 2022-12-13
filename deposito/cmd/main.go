@@ -9,6 +9,7 @@ import (
 	"github.com/Racrivelari/ProjetoEquipeE/deposito/handler"
 	"github.com/Racrivelari/ProjetoEquipeE/deposito/pkg/database"
 	"github.com/Racrivelari/ProjetoEquipeE/deposito/pkg/service"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/webui"
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 )
@@ -34,19 +35,11 @@ func main() {
 		negroni.NewLogger(),
 	)
 
-	r.HandleFunc("/", redirect)
+	webui.RegisterUIHandlers(r, n)
 	handler.RegisterAPIHandlers(r, n, service)
-
-	fs := http.FileServer(http.Dir("webui/dist/spa"))
-	r.Handle("/webui/", http.StripPrefix("/webui/", fs)) 
 	http.ListenAndServe(":5000", r)                      
 
-	//VC PODE PULAR A TELA DE LOGIN, VC COLOCA O ENDERECO/PRODUCTS, dai pula, mas n funciona o front, porem ele puxa a lista de produtos
-	// http://localhost:5000/webui/
-	// http://localhost:5000/api/v1/products 
-
 }
 
-func redirect(w http.ResponseWriter, r *http.Request) {
-	http.Redirect(w, r, "/webui/", http.StatusMovedPermanently)
-}
+
+//
