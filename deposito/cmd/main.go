@@ -42,6 +42,8 @@ func main() {
 	http.ListenAndServe(":5000", r)                      
 
 	//VC PODE PULAR A TELA DE LOGIN, VC COLOCA O ENDERECO/PRODUCTS, dai pula, mas n funciona o front, porem ele puxa a lista de produtos
+	// http://localhost:5000/webui/
+	// http://localhost:5000/api/v1/products 
 
 }
 
