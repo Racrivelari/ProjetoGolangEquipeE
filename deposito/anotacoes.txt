@@ -1,0 +1,13 @@
+-api postman ok, crud funcionando certinho
+
+-verificar pq nao pode deixar setado no bd alguns dados senao explode
+
+-o arquivo stoq_config.json nao ta fazendo diferenca na hora de conectar a app com o bd, só a struct do dbconfig, n sei pq
+se eu tirar o arquivo stoq-config.json ele fumega normal
+
+-verificar questao do front end
+(se tiver main na pasta raíz ele funciona, se for na pasta cmd nao)
+
+
+
+
