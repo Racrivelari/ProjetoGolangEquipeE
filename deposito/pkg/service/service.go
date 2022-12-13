@@ -3,8 +3,8 @@ package service
 import (
 	"fmt"
 	"log"
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/entity"
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/pkg/database"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/entity"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/pkg/database"
 )
 
 type ProdutoServiceInterface interface {

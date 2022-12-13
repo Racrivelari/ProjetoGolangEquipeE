@@ -3,7 +3,7 @@ package database
 import (
 	"database/sql"
 	"log"
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/config"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/config"
 	_ "github.com/go-sql-driver/mysql"
 )
 

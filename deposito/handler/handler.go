@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 	"strconv"
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/entity"
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/pkg/service"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/entity"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/pkg/service"
 	"github.com/gorilla/mux"
 )
 

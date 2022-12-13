@@ -2,7 +2,7 @@ package database
 
 import (
 	"database/sql"
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/config"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/config"
 )
 
 type DatabaseInterface interface {

@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/Racrivelari/ProjetoGolangOFICIAL/deposito/pkg/service"
+	"github.com/Racrivelari/ProjetoEquipeE/deposito/pkg/service"
 	"github.com/gorilla/mux"
 	"github.com/urfave/negroni"
 )
