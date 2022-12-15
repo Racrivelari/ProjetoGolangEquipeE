@@ -55,7 +55,6 @@ func (ps *produto_service) GetByID(ID *int64) *entity.Product {
 	DB := ps.dbp.GetDB()
 
 	stmt, err := DB.Prepare("SELECT id, name, price, code FROM Product where id = ?")
-	// stmt, err := DB.Prepare("SELECT id_prod, name_prod, price_prod, code_prod FROM Product where id_prod = ?", ID)
 	if err != nil {
 		log.Println(err.Error())
 	}

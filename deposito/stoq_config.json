@@ -1,0 +1,15 @@
+{
+    "srv_port": "5000",
+    "web_ui": true,
+    "open_browser": true,
+    "mode": "production",
+    "dbconfig": {
+        "db_drive": "mysql",
+        "db_host": "deposito-db.cmfdgmbsgaqu.sa-east-1.rds.amazonaws.com",
+        "db_port": "3306",
+        "db_user": "admin",
+        "db_pass": "cursogolang",
+        "db_name": "deposito",
+        "db_dsn": "admin:cursogolang@tcp(deposito-db.cmfdgmbsgaqu.sa-east-1.rds.amazonaws.com:3306)/deposito"
+    }
+}
