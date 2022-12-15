@@ -40,6 +40,3 @@ func main() {
 	http.ListenAndServe(":5000", r)                      
 
 }
-
-
-//
