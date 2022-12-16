@@ -2,14 +2,14 @@ package config
 
 import(
 	"os"
-	"strconv"
+	// "strconv"
 )
 
 type Config struct {
 	SRV_PORT    string `json:"srv_port"`
-	WEB_UI      bool   `json:"web_ui"`
-	Mode        string `json:"mode"`
-	OpenBrowser bool   `json:"open_browser"`
+	// WEB_UI      bool   `json:"web_ui"`
+	// Mode        string `json:"mode"`
+	// OpenBrowser bool   `json:"open_browser"`
 	DBConfig    `json:"dbconfig"`
 }
 
@@ -37,15 +37,15 @@ func NewConfig(confi *Config) *Config {
 		conf.SRV_PORT = SRV_PORT
 	}
 
-	SRV_MODE := os.Getenv("SRV_MODE")
-	if SRV_MODE != "" {
-		conf.Mode = SRV_MODE
-	}
+	// SRV_MODE := os.Getenv("SRV_MODE")
+	// if SRV_MODE != "" {
+	// 	conf.Mode = SRV_MODE
+	// }
 
-	SRV_WEB_UI := os.Getenv("SRV_WEB_UI")
-	if SRV_WEB_UI != "" {
-		conf.WEB_UI, _ = strconv.ParseBool(SRV_WEB_UI)
-	}
+	// SRV_WEB_UI := os.Getenv("SRV_WEB_UI")
+	// if SRV_WEB_UI != "" {
+	// 	conf.WEB_UI, _ = strconv.ParseBool(SRV_WEB_UI)
+	// }
 
 	SRV_DB_DRIVE := os.Getenv("SRV_DB_DRIVE")
 	if SRV_DB_DRIVE != "" {
@@ -88,8 +88,8 @@ func NewConfig(confi *Config) *Config {
 func defaultConf() *Config {
 	default_conf := Config{
 		SRV_PORT:    "5000",
-		WEB_UI:      true,
-		OpenBrowser: true,
+		// WEB_UI:      true,
+		// OpenBrowser: true,
 		DBConfig: DBConfig{
 			DB_DRIVE: "mysql",
 			DB_HOST: "deposito-db.cmfdgmbsgaqu.sa-east-1.rds.amazonaws.com",
@@ -99,7 +99,7 @@ func defaultConf() *Config {
 			DB_NAME: "deposito",
 			DB_DSN: "admin:cursogolang@tcp(deposito-db.cmfdgmbsgaqu.sa-east-1.rds.amazonaws.com:3306)/deposito",
 		},
-		Mode: "PRODUCTION",
+		// Mode: "PRODUCTION",
 	}
 
 	return &default_conf

@@ -1,8 +1,5 @@
 {
     "srv_port": "5000",
-    "web_ui": true,
-    "open_browser": true,
-    "mode": "production",
     "dbconfig": {
         "db_drive": "mysql",
         "db_host": "deposito-db.cmfdgmbsgaqu.sa-east-1.rds.amazonaws.com",
